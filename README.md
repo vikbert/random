@@ -1,7 +1,6 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="300px" alt="random" />
-    <h3>Random</h3>
-    <p>A Simple and Flexible Random Content Generator built with love with spf13/cobra in Golang</p>
+    <p>A Simple and Flexible Random Content Generator built with love with <code>spf13/cobra</code> in Golang</p>
 </div>
 
 <p align="center">
@@ -16,17 +15,23 @@
 
 ## Install
 ```bash
-cd random
-go install
+$ go install github.com/vikbert/random
+$ random -h
 ```
 
-## Start
+## Usage
 ```bash
 $ random -h
 $ random uuid
 $ random uuid -h
 $ random pass -h
+```
 
+## Development
+```bash
+git clone https://github.com/vikbert/random.git
+cd random
+go run main.go
 ```
 
 ## Licence
