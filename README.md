@@ -1,14 +1,14 @@
 <div align="center">
-    <img src="https://1.bp.blogspot.com/-dBoGxQMuDpA/YFb8qV9LM5I/AAAAAAAAARQ/ImtGfZRZQ9kweL0OJwnI0mtM_udBtZCqwCNcBGAsYHQ/w680/coding%2Bskils%2Bto%2Bget%2Bjob.jpeg" width="480px" alt="aino" />
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="480px" alt="random" />
     <h3>Random</h3>
-    <p>A React coding kata to slide the SPA page views with animation</p>
+    <p>A Simple and Flexible Random Content Generator built with love with spf13/cobra in Golang</p>
 
-    <p>
+    <p align="center">
         <a href="#">
-            <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+            <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/>
         </a>
         <a href="#">
-            <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License">
+            <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License" />
         </a>
     </p>
 </div>
@@ -30,6 +30,6 @@ $ random pass -h
 
 ```
 
-## licence
+## Licence
 
 [MIT](./LICENSE) License © 2023 [@vikbert](https://vikbert.github.io/)
