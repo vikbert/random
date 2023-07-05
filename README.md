@@ -32,10 +32,10 @@ random pass -h
 
 | Commands  | Description |
 |---|---|
-| uuid  | generate & paste an UUID  |
-| pass | generate & paste a password  |
-| lorem  |  generate & paste a dummy text |
-| joke  |  display a random joke |
+| uuid  | generate & paste an UUID ✅ |
+| pass | generate & paste a password ✅ |
+| text  |  generate & paste a dummy text ✅ |
+| joke  |  display a random joke  |
 | motto  |  display a random motto |
 
 ## Development
