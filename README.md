@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="300px" alt="random" />
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="300px" alt="random"/>
     <p>A Simple and Flexible Random Content Generator built with love with <code>spf13/cobra</code> in Golang</p>
 </div>
 
@@ -8,28 +8,38 @@
         <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/>
     </a>
     <a href="#">
-        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License" />
+        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License"/>
     </a>
 </p>
 
-
 ## Install
+
 ```bash
 go install github.com/vikbert/random
 ```
+
 ```bash
 random -h
 ```
 
 ## Usage
+
 ```bash
-$ random -h
-$ random uuid
-$ random uuid -h
-$ random pass -h
+random -h
+random uuid -h
+random pass -h
 ```
 
+| Commands  | Description |
+|---|---|
+| uuid  | generate & paste an UUID  |
+| pass | generate & paste a password  |
+| lorem  |  generate & paste a dummy text |
+| joke  |  display a random joke |
+| motto  |  display a random motto |
+
 ## Development
+
 ```bash
 git clone https://github.com/vikbert/random.git
 cd random
