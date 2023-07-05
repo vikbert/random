@@ -16,6 +16,6 @@ func ClipCopy(content string, prompt bool) {
 	}
 
 	if prompt {
-		fmt.Println("✅ Generated content is copied to clipboard: \n", content)
+		fmt.Println("✅ Generated content is copied to clipboard! \n", content)
 	}
 }

@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="300px" alt="random"/>
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="220px" alt="random"/>
     <p>A Simple and Flexible Random Content Generator built with love with <code>spf13/cobra</code> in Golang</p>
 </div>
 
