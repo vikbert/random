@@ -15,8 +15,10 @@
 
 ## Install
 ```bash
-$ go install github.com/vikbert/random
-$ random -h
+go install github.com/vikbert/random
+```
+```bash
+random -h
 ```
 
 ## Usage
