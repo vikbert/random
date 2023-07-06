@@ -12,6 +12,7 @@
     </a>
 </p>
 
+
 ## Install
 
 ```bash
@@ -29,6 +30,10 @@ random -h
 random uuid -h
 random pass -h
 ```
+
+![](images/01-help.png)
+![](images/02-usage.png)
+
 
 | Commands  | Description |
 |---|---|
