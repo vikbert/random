@@ -17,10 +17,10 @@ func ClipCopy(content string, prompt bool) {
 
 	err := clipboard.WriteAll(content)
 	if err != nil {
-		fmt.Println("❗️Can't write to clipboard: ", err.Error())
+		fmt.Println("Can't write to clipboard: ", err.Error())
 	}
 
 	if prompt {
-		fmt.Println("✅ Generated content is copied to clipboard! \n", content)
+		fmt.Println("✔️Generated content is copied to clipboard! \n", content)
 	}
 }

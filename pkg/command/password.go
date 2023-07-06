@@ -20,7 +20,6 @@ var (
 		Run: func(_ *cobra.Command, _ []string) {
 			password := generator.GeneratePassword(passLength)
 			clipboard.ClipCopy(password, true)
-
 		},
 	}
 )
