@@ -35,8 +35,8 @@ random pass -h
 | uuid  | generate & paste an UUID ✅ |
 | pass | generate & paste a password ✅ |
 | text  |  generate & paste a dummy text ✅ |
-| joke  |  display a random joke  |
-| motto  |  display a random motto |
+| joke  |  display a random joke ✅ |
+| motto  |  display a random motto ✅ |
 
 ## Development
 
@@ -49,3 +49,18 @@ go run main.go
 ## Licence
 
 [MIT](./LICENSE) License © 2023 [@vikbert](https://vikbert.github.io/)
+
+
+## Thanks
+
+Cobar.dev
+
+https://cobra.dev/
+
+Joke API
+
+https://sv443.net/jokeapi/v2/
+
+Quotes API
+
+https://api-ninjas.com/api/quotes
