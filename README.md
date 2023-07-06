@@ -20,7 +20,7 @@
 ## Install
 
 ```bash
-go install github.com/vikbert/random
+go install github.com/vikbert/random/cmd/random@latest
 ```
 
 ```bash
