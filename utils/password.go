@@ -9,7 +9,7 @@ const (
 	characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()?{}[]"
 )
 
-func GenerateWord(length int) string {
+func RandomPassword(length int) string {
 	charsetLength := big.NewInt(int64(len(characterSet)))
 	password := make([]byte, length)
 

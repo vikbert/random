@@ -17,7 +17,7 @@ var (
 		Long: `This command generates a random password and 
     pastes the password to the system clipboard automatically. Default length of password is 12`,
 		Run: func(_ *cobra.Command, _ []string) {
-			password := utils.GenerateWord(passLength)
+			password := utils.RandomPassword(passLength)
 			utils.ClipCopy(password, true)
 
 		},

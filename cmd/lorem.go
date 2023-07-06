@@ -26,7 +26,7 @@ var (
 			size, _ := cmd.Flags().GetInt("size")
 
 			var loremText string
-			loremText = utils.GenerateText(size)
+			loremText = utils.RandomText(size)
 			utils.ClipCopy(loremText, true)
 		},
 	}

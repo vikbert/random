@@ -18,7 +18,7 @@ var (
     and displays the content in the terminal`,
 
 		Run: func(_ *cobra.Command, args []string) {
-			fmt.Println("\n", utils.FetchMotto())
+			fmt.Println("\n", utils.RandomMotto())
 		},
 	}
 )

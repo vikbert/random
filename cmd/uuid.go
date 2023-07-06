@@ -17,7 +17,7 @@ var (
     and pastes the UUID to the system clipboard automatically`,
 
 		Run: func(_ *cobra.Command, _ []string) {
-			id := utils.GenerateUuid()
+			id := utils.RandomUuid()
 			utils.ClipCopy(id, true)
 		},
 	}

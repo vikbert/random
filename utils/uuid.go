@@ -2,6 +2,6 @@ package utils
 
 import "github.com/google/uuid"
 
-func GenerateUuid() string {
+func RandomUuid() string {
 	return uuid.New().String()
 }

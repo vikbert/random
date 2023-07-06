@@ -5,7 +5,7 @@ import (
 	"github.com/icelain/jokeapi"
 )
 
-func FetchJoke() string {
+func RandomJoke() string {
 	api := jokeapi.New()
 	response, err := api.Fetch()
 	if err != nil {

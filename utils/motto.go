@@ -21,7 +21,7 @@ type motto struct {
 	Category string `json:"category"`
 }
 
-func FetchMotto() string {
+func RandomMotto() string {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", apiUrl, nil)
 	if err != nil {

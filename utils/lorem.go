@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func GenerateText(wordCount int) string {
+func RandomText(wordCount int) string {
 	loremWords := []string{
 		"Lorem", "ipsum", "dolor", "sit", "amet", "consectetur",
 		"adipiscing", "elit", "sed", "do", "eiusmod", "tempor",

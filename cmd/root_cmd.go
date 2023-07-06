@@ -39,7 +39,7 @@ func ExecuteAll() error {
 	rootCmd.SetUsageTemplate(usageTemplate)
 
 	// apply default command to generate UUID
-	id := utils.GenerateUuid()
+	id := utils.RandomUuid()
 	utils.ClipCopy(id, false)
 
 	return rootCmd.Execute()
