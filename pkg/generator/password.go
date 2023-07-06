@@ -1,4 +1,4 @@
-package utils
+package generator
 
 import (
 	"crypto/rand"
@@ -9,7 +9,7 @@ const (
 	characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()?{}[]"
 )
 
-func RandomPassword(length int) string {
+func GeneratePassword(length int) string {
 	charsetLength := big.NewInt(int64(len(characterSet)))
 	password := make([]byte, length)
 

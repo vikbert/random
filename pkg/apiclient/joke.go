@@ -1,11 +1,11 @@
-package utils
+package apiclient
 
 import (
 	"fmt"
 	"github.com/icelain/jokeapi"
 )
 
-func RandomJoke() string {
+func FetchJoke() string {
 	api := jokeapi.New()
 	response, err := api.Fetch()
 	if err != nil {

@@ -1,4 +1,4 @@
-package utils
+package apiclient
 
 import (
 	"encoding/json"
@@ -21,7 +21,7 @@ type motto struct {
 	Category string `json:"category"`
 }
 
-func RandomMotto() string {
+func FetchMotto() string {
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", apiUrl, nil)
 	if err != nil {

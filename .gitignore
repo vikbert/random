@@ -1,0 +1,7 @@
+*.test
+*.pdf
+*.pprof
+*.txt
+.DS_Store
+.idea/
+.vscode/

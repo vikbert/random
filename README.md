@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/vikbert/random/main/logo.jpg" width="220px" alt="random"/>
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/assets/logo.jpg" width="220px" alt="random"/>
     <p>A Simple and Flexible Random Content Generator built with love with <code>cobra</code> in <code>Golang</code></p>
 </div>
 
@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/vikbert/random/main/images/gocobra.png" width="480px" alt="random"/>
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/assets/gocobra.png" width="480px" alt="random"/>
 </div>
 
 
@@ -35,8 +35,8 @@ random uuid -h
 random pass -h
 ```
 
-![](images/01-help.png)
-![](images/02-usage.png)
+![](assets/help.png)
+![](assets/usage.png)
 
 
 | Commands  | Description |

@@ -1,9 +1,9 @@
-package commands
+package command
 
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/vikbert/random/utils"
+	"github.com/vikbert/random/pkg/apiclient"
 )
 
 func init() {
@@ -18,7 +18,7 @@ var (
     and displays the content in the terminal`,
 
 		Run: func(_ *cobra.Command, args []string) {
-			fmt.Println("\n", utils.RandomMotto())
+			fmt.Println("\n", apiclient.FetchMotto())
 		},
 	}
 )

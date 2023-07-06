@@ -1,9 +1,9 @@
-package commands
+package command
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/vikbert/random/pkg/Generator"
-	"github.com/vikbert/random/utils"
+	"github.com/vikbert/random/pkg/clipboard"
+	"github.com/vikbert/random/pkg/generator"
 )
 
 func init() {
@@ -18,8 +18,8 @@ var (
     and pastes the UUID to the system clipboard automatically`,
 
 		Run: func(_ *cobra.Command, _ []string) {
-			id := Generator.GenerateUuid()
-			utils.ClipCopy(id, true)
+			id := generator.GenerateUuid()
+			clipboard.ClipCopy(id, true)
 		},
 	}
 )

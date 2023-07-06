@@ -1,18 +1,18 @@
-package utils
+package generator
 
 import (
 	"math/rand"
 	"time"
 )
 
-func RandomInt(max int) int {
+func GenerateInt(max int) int {
 	s := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(s)
 
 	return r.Intn(max)
 }
 
-func RandomFloat64() float64 {
+func GenerateFloat() float64 {
 	s := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(s)
 

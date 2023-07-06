@@ -1,9 +1,9 @@
-package commands
+package command
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/vikbert/random/pkg/Generator"
-	"github.com/vikbert/random/utils"
+	"github.com/vikbert/random/pkg/clipboard"
+	"github.com/vikbert/random/pkg/generator"
 )
 
 func init() {
@@ -27,8 +27,8 @@ var (
 			size, _ := cmd.Flags().GetInt("size")
 
 			var loremText string
-			loremText = Generator.RandomText(size)
-			utils.ClipCopy(loremText, true)
+			loremText = generator.RandomText(size)
+			clipboard.ClipCopy(loremText, true)
 		},
 	}
 )
