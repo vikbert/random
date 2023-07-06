@@ -52,7 +52,10 @@ random pass -h
 ```bash
 git clone https://github.com/vikbert/random.git
 cd random
-go run main.go
+
+make install
+make build
+make tidy
 ```
 
 ## Licence

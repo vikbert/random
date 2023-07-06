@@ -13,13 +13,16 @@ ifeq ($(OS),Windows_NT)
 endif
 
 #-- Golang commands
-build: ## build the command "random"
-	go build -race -o dist/$(BINARY) ./cmd/random
+install: ## install the executable to GOPATH
+	cd cmd/random && go install
 
 tidy: ## verify the dependencies of module
 	go mod tidy
 	go mod verify
 
-install: ## install the executable to GOPATH
-	cd cmd/random && go install
+build: ## build the command "random"
+	go build -race -o dist/$(BINARY) ./cmd/random
+
+run: ## run the main.go
+	go run ./cmd/random
 
