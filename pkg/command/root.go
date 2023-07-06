@@ -1,8 +1,9 @@
-package cmd
+package commands
 
 import (
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
+	"github.com/vikbert/random/pkg/Generator"
 	"github.com/vikbert/random/utils"
 	"regexp"
 	"strings"
@@ -39,7 +40,7 @@ func ExecuteAll() error {
 	rootCmd.SetUsageTemplate(usageTemplate)
 
 	// apply default command to generate UUID
-	id := utils.RandomUuid()
+	id := Generator.GenerateUuid()
 	utils.ClipCopy(id, false)
 
 	return rootCmd.Execute()

@@ -1,7 +1,8 @@
-package cmd
+package commands
 
 import (
 	"github.com/spf13/cobra"
+	"github.com/vikbert/random/pkg/Generator"
 	"github.com/vikbert/random/utils"
 )
 
@@ -26,7 +27,7 @@ var (
 			size, _ := cmd.Flags().GetInt("size")
 
 			var loremText string
-			loremText = utils.RandomText(size)
+			loremText = Generator.RandomText(size)
 			utils.ClipCopy(loremText, true)
 		},
 	}

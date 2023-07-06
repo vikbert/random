@@ -1,7 +1,8 @@
-package cmd
+package commands
 
 import (
 	"github.com/spf13/cobra"
+	"github.com/vikbert/random/pkg/Generator"
 	"github.com/vikbert/random/utils"
 )
 
@@ -17,7 +18,7 @@ var (
 		Long: `This command generates a random password and 
     pastes the password to the system clipboard automatically. Default length of password is 12`,
 		Run: func(_ *cobra.Command, _ []string) {
-			password := utils.RandomPassword(passLength)
+			password := Generator.GeneratePassword(passLength)
 			utils.ClipCopy(password, true)
 
 		},
