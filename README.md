@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/vikbert/random/main/images/gocobra.png" width="48px" alt="random"/>
+    <img src="https://raw.githubusercontent.com/vikbert/random/main/images/gocobra.png" width="480px" alt="random"/>
 </div>
 
 
