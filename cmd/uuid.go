@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	baseCmd.AddCommand(uuidCmd)
+	rootCmd.AddCommand(uuidCmd)
 }
 
 var (

@@ -19,7 +19,7 @@ go install github.com/vikbert/random
 ```
 
 ```bash
-random -h
+random help
 ```
 
 ## Usage

@@ -3,11 +3,16 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 	"github.com/vikbert/random/utils"
-	"strconv"
 )
 
 func init() {
-	baseCmd.AddCommand(loremCmd)
+	rootCmd.AddCommand(loremCmd)
+	loremCmd.PersistentFlags().IntP(
+		"size",
+		"s",
+		120,
+		"Amount of words for generated text",
+	)
 }
 
 var (
@@ -17,18 +22,11 @@ var (
 		Long: `This command generates the dummy lorem text 
     and pastes the content to the system clipboard automatically`,
 
-		Run: func(_ *cobra.Command, args []string) {
-			var count int
-			if len(args) >= 1 {
-				arg1, err := strconv.Atoi(args[0])
-				if err != nil {
-					count = 0
-				} else {
-					count = arg1
-				}
-			}
+		Run: func(cmd *cobra.Command, args []string) {
+			size, _ := cmd.Flags().GetInt("size")
 
-			loremText := utils.GenerateText(count)
+			var loremText string
+			loremText = utils.GenerateText(size)
 			utils.ClipCopy(loremText, true)
 		},
 	}

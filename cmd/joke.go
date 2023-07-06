@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	baseCmd.AddCommand(jokeCmd)
+	rootCmd.AddCommand(jokeCmd)
 }
 
 var (

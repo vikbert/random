@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	baseCmd.AddCommand(passCmd)
+	rootCmd.AddCommand(passCmd)
 }
 
 var (

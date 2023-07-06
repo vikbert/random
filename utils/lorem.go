@@ -7,13 +7,7 @@ import (
 	"time"
 )
 
-const defaultCount = 120
-
 func GenerateText(wordCount int) string {
-	if 0 == wordCount {
-		wordCount = defaultCount
-	}
-
 	loremWords := []string{
 		"Lorem", "ipsum", "dolor", "sit", "amet", "consectetur",
 		"adipiscing", "elit", "sed", "do", "eiusmod", "tempor",
