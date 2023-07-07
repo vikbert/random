@@ -64,6 +64,10 @@ make tidy
 
 
 ## Thanks
+go/template by @Schwarz IT
+
+https://github.com/SchwarzIT/go-template
+
 
 Cobar.dev
 
