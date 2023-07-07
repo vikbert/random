@@ -15,12 +15,13 @@ func RandomText(wordCount int) string {
 		"aliqua.", "Ut", "enim", "ad", "minim", "veniam",
 	}
 
-	rand.Seed(time.Now().UnixNano())
+	loremText := make([]string, wordCount)
 	len := len(loremWords)
 
-	loremText := make([]string, wordCount)
+	s := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(s)
 	for i := 0; i < wordCount; i++ {
-		loremText[i] = loremWords[rand.Intn(len)]
+		loremText[i] = loremWords[r.Intn(len)]
 	}
 
 	return fmt.Sprintf("%s.", strings.Join(loremText, " "))
