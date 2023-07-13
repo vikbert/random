@@ -1,12 +1,7 @@
 package command
 
 import (
-	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/vikbert/random/pkg/clipboard"
-	"github.com/vikbert/random/pkg/generator"
-	"regexp"
-	"strings"
 )
 
 var (
@@ -26,22 +21,22 @@ func ExecuteAll() error {
 	// hide the unused commmand "completion"
 	rootCmd.CompletionOptions.DisableDefaultCmd = true
 
-	// styling via UsageTemplate
-	cobra.AddTemplateFunc("StyleHeading", color.New(color.FgGreen).SprintFunc())
-	usageTemplate := rootCmd.UsageTemplate()
-	usageTemplate = strings.NewReplacer(
-		`Usage:`, `{{StyleHeading "Usage:"}}`,
-		`Aliases:`, `{{StyleHeading "Aliases:"}}`,
-		`Available Commands:`, `{{StyleHeading "Available Commands:"}}`,
-		`Global Flags:`, `{{StyleHeading "Global Flags:"}}`,
-	).Replace(usageTemplate)
-	re := regexp.MustCompile(`(?m)^Flags:\s*$`)
-	usageTemplate = re.ReplaceAllLiteralString(usageTemplate, `{{StyleHeading "Flags:"}}`)
-	rootCmd.SetUsageTemplate(usageTemplate)
+	//// styling via UsageTemplate
+	//cobra.AddTemplateFunc("StyleHeading", color.New(color.FgGreen).SprintFunc())
+	//usageTemplate := rootCmd.UsageTemplate()
+	//usageTemplate = strings.NewReplacer(
+	//	`Usage:`, `{{StyleHeading "Usage:"}}`,
+	//	`Aliases:`, `{{StyleHeading "Aliases:"}}`,
+	//	`Available Commands:`, `{{StyleHeading "Available Commands:"}}`,
+	//	`Global Flags:`, `{{StyleHeading "Global Flags:"}}`,
+	//).Replace(usageTemplate)
+	//re := regexp.MustCompile(`(?m)^Flags:\s*$`)
+	//usageTemplate = re.ReplaceAllLiteralString(usageTemplate, `{{StyleHeading "Flags:"}}`)
+	//rootCmd.SetUsageTemplate(usageTemplate)
 
 	// apply default command to generate UUID
-	id := generator.GenerateUuid()
-	clipboard.ClipCopy(id, false)
+	//id := generator.GenerateUuid()
+	//clipboard.ClipCopy(id, false)
 
 	return rootCmd.Execute()
 }
